@@ -1,0 +1,35 @@
+# Call stack
+// First we put this in html file <script src = "script.js"></script>
+
+function hello(){
+console.log("Inside hello fn");
+}
+function demo(){
+console.log("calling hello fn");
+hello();
+}
+
+console.log("calling demo fn");
+demo();
+console.log("done by by!");
+
+// output :-
+// calling demo fn
+//calling hello fn
+//Inside hello function
+//done by!
+
+// call satck based question
+
+function one(){
+return 1;
+}
+
+function two(){
+return one() + one() ; 
+}
+
+function three(){
+let ans = two() + one();
+}
+three(); // output = 3;
