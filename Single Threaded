@@ -1,0 +1,10 @@
+# Single threaded JS 
+// Synchronous nature
+
+ let a = 2;
+console.log(a);
+let b = 26;
+console.log(b);
+
+console.log(a+b);
+//output :- 2; 26; 29
