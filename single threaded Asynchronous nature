@@ -1,0 +1,22 @@
+# Single threaded
+// Asynchronous nature
+
+setTimeout(() => {
+    console.log("apna college");
+}, 2000);
+
+setTimeout(() => {
+    console.log("hello world");
+},2000);
+
+setTimeout(() => {
+    console.log("Globally Accepted");
+},4000);
+
+console.log("hey shri...");
+
+// serial wise out put 
+// hey shri...!
+// apna college
+//hello world
+//Globally Accepted
